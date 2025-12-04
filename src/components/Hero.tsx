@@ -19,13 +19,7 @@ const Hero = () => {
           {/* Left Side - Content */}
           <div className="order-2 lg:order-1 space-y-4 md:space-y-6 text-center lg:text-left">
             {/* Status Badge */}
-            <div className="inline-flex items-center gap-2 px-3 md:px-4 py-1.5 md:py-2 rounded-full bg-primary/10 border border-primary/20">
-              <span className="relative flex h-2 w-2">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-500 opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
-              </span>
-              <span className="text-xs md:text-sm font-medium text-foreground/80">Available for opportunities</span>
-            </div>
+           
 
             {/* Name & Title */}
             <div className="space-y-2 md:space-y-3">
@@ -128,7 +122,7 @@ const Hero = () => {
               <div className="relative w-56 h-56 sm:w-64 sm:h-64 md:w-72 md:h-72 lg:w-80 lg:h-80 xl:w-96 xl:h-96 rounded-2xl overflow-hidden bg-gradient-to-br from-muted to-muted/50 border border-border/50 shadow-2xl">
                 {/* Placeholder - Replace with actual image */}
                 <img
-                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&h=500&fit=crop&crop=face"
+                  src="/public/IMG_1649a.jpg"
                   alt="Muhammad Zeeshan Abbas"
                   className="w-full h-full object-cover"
                 />
@@ -136,31 +130,7 @@ const Hero = () => {
                 <div className="absolute inset-0 bg-gradient-to-t from-background/20 to-transparent" />
               </div>
 
-              {/* Floating Experience Badge */}
-              <div className="absolute bottom-2 -left-2 sm:bottom-4 sm:-left-4 md:bottom-8 md:-left-8 bg-card border border-border rounded-lg md:rounded-xl px-2.5 sm:px-3 md:px-4 py-2 md:py-3 shadow-lg">
-                <div className="flex items-center gap-2 md:gap-3">
-                  <div className="w-8 h-8 md:w-10 md:h-10 rounded-lg bg-primary/10 flex items-center justify-center">
-                    <span className="text-sm md:text-lg font-bold text-primary">3+</span>
-                  </div>
-                  <div>
-                    <p className="text-xs md:text-sm font-semibold text-foreground">Years</p>
-                    <p className="text-[10px] md:text-xs text-muted-foreground">Experience</p>
-                  </div>
-                </div>
-              </div>
-
-              {/* Floating Projects Badge */}
-              <div className="absolute top-2 -right-2 sm:top-4 sm:-right-4 md:top-8 md:-right-8 bg-card border border-border rounded-lg md:rounded-xl px-2.5 sm:px-3 md:px-4 py-2 md:py-3 shadow-lg">
-                <div className="flex items-center gap-2 md:gap-3">
-                  <div className="w-8 h-8 md:w-10 md:h-10 rounded-lg bg-secondary/10 flex items-center justify-center">
-                    <span className="text-sm md:text-lg font-bold text-secondary">50+</span>
-                  </div>
-                  <div>
-                    <p className="text-xs md:text-sm font-semibold text-foreground">Projects</p>
-                    <p className="text-[10px] md:text-xs text-muted-foreground">Completed</p>
-                  </div>
-                </div>
-              </div>
+              
             </div>
           </div>
         </div>

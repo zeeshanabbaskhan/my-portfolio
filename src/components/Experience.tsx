@@ -1,150 +1,167 @@
-import { Briefcase, GraduationCap, Award } from "lucide-react";
+import { GraduationCap, Award, Calendar, MapPin } from "lucide-react";
 
 const Experience = () => {
   const education = [
     {
-      year: "2024 - 2028",
-      title: "Bachelor of Artificial Intelligence",
-      company: "National University of Sciences and Technology (NUST)",
+      id: 1,
+      degree: "Bachelor of Artificial Intelligence",
+      institution: "National University of Sciences and Technology (NUST)",
+      location: "Islamabad, Pakistan",
+      duration: "2024 - 2028",
+      status: "In Progress",
       description:
         "Pursuing a comprehensive degree program focused on Artificial Intelligence, covering core areas such as machine learning, deep learning, data science, and software engineering.",
-      achievements: [
+      courses: [
         "C++ Programming",
         "Java Programming",
         "Python Programming",
         "Spring Boot",
         "Database Management",
-        "Full Stack Project Lead",
-        "Academic Excellence",
+        "Data Structures & Algorithms",
       ],
-      icon: GraduationCap,
     },
   ];
 
   const certifications = [
     {
-      year: "2025",
+      id: 1,
       title: "Meta Full Stack Development",
-      company: "Meta",
-      description:
-        "Comprehensive certification covering full-stack web development using modern technologies and best practices.",
-      achievements: [
-        "React & React Native",
-        "Backend Development",
-        "Database Design",
-      ],
-      icon: Award,
+      issuer: "Meta",
+      date: "2025",
+      skills: ["React", "React Native", "Backend Development", "Database Design"],
     },
     {
-      year: "2025",
+      id: 2,
       title: "Crash Course on Python",
-      company: "Google",
-      description:
-        "Intensive Python programming course covering fundamentals to advanced concepts for software development.",
-      achievements: [
-        "Python Fundamentals",
-        "Data Structures",
-        "Automation Scripts",
-      ],
-      icon: Award,
+      issuer: "Google",
+      date: "2025",
+      skills: ["Python Fundamentals", "Data Structures", "Automation Scripts"],
     },
   ];
-
-  const allExperiences = [...education, ...certifications];
 
   return (
     <section id="experience" className="py-20 lg:py-32">
       <div className="container mx-auto px-4 lg:px-8">
-        <div className="max-w-4xl mx-auto">
-          {/* Section Header */}
-          <div className="text-center mb-16 animate-fade-in">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">
-              Education & <span className="bg-gradient-primary bg-clip-text text-transparent">Certifications</span>
-            </h2>
-            <div className="w-20 h-1 bg-gradient-primary mx-auto rounded-full mb-6" />
-            <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-              My academic journey and professional certifications
-            </p>
-          </div>
+        {/* Section Header */}
+        <div className="text-center mb-16">
+          <span className="inline-block px-4 py-1.5 bg-primary/10 text-primary text-sm font-medium rounded-full mb-4">
+            Background
+          </span>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
+            Education & <span className="text-primary">Certifications</span>
+          </h2>
+          <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+            My academic journey and professional development
+          </p>
+        </div>
 
-          {/* Timeline */}
-          <div className="relative">
-            {/* Timeline Line */}
-            <div className="absolute left-0 md:left-1/2 top-0 bottom-0 w-0.5 bg-gradient-primary transform md:-translate-x-1/2" />
+        <div className="max-w-6xl mx-auto">
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12">
+            {/* Education Column */}
+            <div>
+              <div className="flex items-center gap-3 mb-6">
+                <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
+                  <GraduationCap className="w-5 h-5 text-primary" />
+                </div>
+                <h3 className="text-xl font-bold">Education</h3>
+              </div>
 
-            {/* Timeline Items */}
-            <div className="space-y-12">
-              {allExperiences.map((exp, index) => {
-                const Icon = exp.icon || Briefcase;
-                return (
+              <div className="space-y-6">
+                {education.map((edu) => (
                   <div
-                    key={index}
-                    className={`relative animate-fade-in ${index % 2 === 0 ? "md:text-right" : "md:text-left"
-                      }`}
-                    style={{ animationDelay: `${index * 150}ms` }}
+                    key={edu.id}
+                    className="bg-card rounded-2xl p-6 border border-border hover:border-primary/30 transition-all duration-300"
                   >
-                    <div
-                      className={`md:w-1/2 ${index % 2 === 0 ? "md:ml-auto md:pl-12" : "md:mr-auto md:pr-12"
-                        } pl-12 md:pl-0 md:pr-0`}
-                    >
-                      {/* Timeline Dot */}
-                      <div
-                        className={`absolute left-0 md:left-1/2 top-6 w-4 h-4 bg-gradient-primary rounded-full transform md:-translate-x-1/2 border-4 border-background ${index % 2 === 0 ? "md:translate-x-1/2" : "md:-translate-x-1/2"
-                          }`}
-                      />
+                    {/* Status Badge */}
+                    <span className="inline-block px-3 py-1 bg-green-500/10 text-green-600 dark:text-green-400 text-xs font-semibold rounded-full mb-4">
+                      {edu.status}
+                    </span>
 
-                      {/* Content Card */}
-                      <div className="bg-card rounded-2xl p-6 shadow-card hover:shadow-glow transition-all duration-300 border border-border hover:border-primary/50 group">
-                        {/* Icon */}
-                        <div
-                          className={`inline-flex items-center justify-center w-12 h-12 bg-gradient-primary rounded-xl mb-4 ${index % 2 === 0 ? "md:ml-auto" : "md:mr-auto"
-                            }`}
-                        >
-                          <Icon className="w-6 h-6 text-primary-foreground" />
-                        </div>
+                    <h4 className="text-lg font-bold text-foreground mb-2">
+                      {edu.degree}
+                    </h4>
+                    <p className="text-primary font-medium mb-3">
+                      {edu.institution}
+                    </p>
 
-                        {/* Year Badge */}
-                        <div
-                          className={`inline-block px-4 py-1 bg-muted rounded-full text-sm font-medium text-muted-foreground mb-3`}
-                        >
-                          {exp.year}
-                        </div>
+                    <div className="flex flex-wrap gap-3 text-sm text-muted-foreground mb-4">
+                      <span className="inline-flex items-center gap-1.5">
+                        <Calendar className="w-4 h-4" />
+                        {edu.duration}
+                      </span>
+                      <span className="inline-flex items-center gap-1.5">
+                        <MapPin className="w-4 h-4" />
+                        {edu.location}
+                      </span>
+                    </div>
 
-                        {/* Title & Company */}
-                        <h3 className="text-2xl font-bold mb-1 group-hover:text-primary transition-colors">
-                          {exp.title}
-                        </h3>
-                        <p className="text-lg text-muted-foreground font-medium mb-3">
-                          {exp.company}
-                        </p>
+                    <p className="text-muted-foreground text-sm leading-relaxed mb-4">
+                      {edu.description}
+                    </p>
 
-                        {/* Description */}
-                        <p className="text-muted-foreground leading-relaxed mb-4">
-                          {exp.description}
-                        </p>
-
-                        {/* Achievements */}
-                        <ul
-                          className={`space-y-2 ${index % 2 === 0
-                              ? "md:text-right md:flex md:flex-col md:items-end"
-                              : "text-left"
-                            }`}
-                        >
-                          {exp.achievements.map((achievement, achIndex) => (
-                            <li
-                              key={achIndex}
-                              className="flex items-start gap-2 text-sm text-muted-foreground"
-                            >
-                              <span className="text-primary font-bold">✓</span>
-                              <span>{achievement}</span>
-                            </li>
-                          ))}
-                        </ul>
+                    {/* Courses */}
+                    <div>
+                      <p className="text-xs font-semibold text-foreground uppercase tracking-wider mb-2">
+                        Key Courses
+                      </p>
+                      <div className="flex flex-wrap gap-2">
+                        {edu.courses.map((course, idx) => (
+                          <span
+                            key={idx}
+                            className="px-2.5 py-1 bg-muted rounded-md text-xs font-medium text-muted-foreground"
+                          >
+                            {course}
+                          </span>
+                        ))}
                       </div>
                     </div>
                   </div>
-                );
-              })}
+                ))}
+              </div>
+            </div>
+
+            {/* Certifications Column */}
+            <div>
+              <div className="flex items-center gap-3 mb-6">
+                <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
+                  <Award className="w-5 h-5 text-primary" />
+                </div>
+                <h3 className="text-xl font-bold">Certifications</h3>
+              </div>
+
+              <div className="space-y-4">
+                {certifications.map((cert) => (
+                  <div
+                    key={cert.id}
+                    className="bg-card rounded-xl p-5 border border-border hover:border-primary/30 transition-all duration-300 group"
+                  >
+                    <div className="flex items-start justify-between gap-4 mb-3">
+                      <div>
+                        <h4 className="font-bold text-foreground group-hover:text-primary transition-colors">
+                          {cert.title}
+                        </h4>
+                        <p className="text-sm text-muted-foreground">
+                          Issued by <span className="text-primary font-medium">{cert.issuer}</span>
+                        </p>
+                      </div>
+                      <span className="flex-shrink-0 px-2.5 py-1 bg-muted rounded-md text-xs font-medium text-muted-foreground">
+                        {cert.date}
+                      </span>
+                    </div>
+
+                    <div className="flex flex-wrap gap-2">
+                      {cert.skills.map((skill, idx) => (
+                        <span
+                          key={idx}
+                          className="px-2 py-0.5 bg-primary/5 border border-primary/20 rounded text-xs font-medium text-foreground"
+                        >
+                          {skill}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </div>
