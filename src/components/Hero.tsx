@@ -122,7 +122,7 @@ const Hero = () => {
               <div className="relative w-56 h-56 sm:w-64 sm:h-64 md:w-72 md:h-72 lg:w-80 lg:h-80 xl:w-96 xl:h-96 rounded-2xl overflow-hidden bg-gradient-to-br from-muted to-muted/50 border border-border/50 shadow-2xl">
                 {/* Placeholder - Replace with actual image */}
                 <img
-                  src="/public/IMG_1649a.jpg"
+                  src="/IMG_1649a.jpg"
                   alt="Muhammad Zeeshan Abbas"
                   className="w-full h-full object-cover"
                 />
