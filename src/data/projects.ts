@@ -231,7 +231,7 @@ export const projects: Project[] = [
         fullDescription:
             "A comprehensive Remote Vitals Monitoring System designed to enable hospitals, clinics, and caregivers to monitor patients' vital signs and medical history remotely. The system features role-based access for Admins, Doctors, and Patients with separate functionality for each. Admins can manage patients, doctors, and appointments while supervising overall vitals tracking. Doctors can view assigned patients, their medical history, and vital records. Patients can view their medical history, vital records, and schedule appointments. The backend is built with Java Spring Boot using Jakarta EE and Spring Data JPA, while the frontend uses JavaFX for an intuitive desktop interface.",
         image:
-            "https://res.cloudinary.com/dxkzjrwgf/image/upload/v1754288358/WhatsApp_Image_2025-05-15_at_10.35.31_18aad438_scneja.jpg",
+            "https://res.cloudinary.com/dxkzjrwgf/image/upload/v1764916357/Screenshot_2025-12-05_113117_jzdoiq.png",
         technologies: [
             "Java",
             "Spring Boot",
@@ -367,7 +367,7 @@ export const projects: Project[] = [
         fullDescription:
             "Financer is a production-ready, full-stack personal and group finance management web application. The platform enables users to track income/expenses with detailed analytics, split bills with friends using equal or custom amounts, set and monitor savings goals with progress visualization, and receive customizable email reminders. Features include JWT authentication with email OTP verification, PKR currency support with multi-currency options, contact management for easy expense sharing, payment request system with professional invoices, bank account integration, and a modern responsive sidebar layout with full dark mode support.",
         image:
-            "https://res.cloudinary.com/dxkzjrwgf/image/upload/v1754287430/WhatsApp_Image_2025-06-27_at_16.30.20_e684ea9b_grsfty.jpg",
+            "https://res.cloudinary.com/dxkzjrwgf/image/upload/v1763110173/Screenshot_2025-11-14_134859_syuagi.png",
         technologies: [
             "Next.js 16",
             "React 19",
