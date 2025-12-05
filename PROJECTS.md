@@ -121,7 +121,7 @@ A currency converter application with real-time exchange rates and support for 1
 
 - **GitHub:** [@zeeshan-890](https://github.com/zeeshan-890)
 - **Portfolio:** [Coming Soon]
-- **LinkedIn:** [Zeeshan Abbas](https://linkedin.com/in/zeeshan-abbas)
+- **LinkedIn:** [Muhammad Zeeshan Abbas](https://www.linkedin.com/in/muhammad-zeeshan-abbas-82076a36b/)
 
 ---
 

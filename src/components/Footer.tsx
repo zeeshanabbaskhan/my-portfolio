@@ -5,7 +5,7 @@ const Footer = () => {
 
   const socialLinks = [
     { icon: Github, href: "https://github.com/zeeshan-890", label: "GitHub" },
-    { icon: Linkedin, href: "https://www.linkedin.com/in/zeeshan-abbas-82076a36b/", label: "LinkedIn" },
+    { icon: Linkedin, href: "https://www.linkedin.com/in/muhammad-zeeshan-abbas-82076a36b/", label: "LinkedIn" },
     { icon: Mail, href: "mailto:zzabbaskhan830@email.com", label: "Email" },
   ];
 
@@ -53,7 +53,7 @@ const Footer = () => {
               <h4 className="font-semibold mb-4">Get In Touch</h4>
               <ul className="space-y-2 text-muted-foreground">
                 <li>zzabbaskhan830@email.com</li>
-                <li>LinkedIn: @zeeshan-abbas-82076a36b</li>
+                <li>LinkedIn: @muhammad-zeeshan-abbas-82076a36b</li>
                 <li>Islamabad, Pakistan</li>
               </ul>
             </div>

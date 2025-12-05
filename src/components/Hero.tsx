@@ -19,7 +19,7 @@ const Hero = () => {
           {/* Left Side - Content */}
           <div className="order-2 lg:order-1 space-y-4 md:space-y-6 text-center lg:text-left">
             {/* Status Badge */}
-           
+
 
             {/* Name & Title */}
             <div className="space-y-2 md:space-y-3">
@@ -91,7 +91,7 @@ const Hero = () => {
                   <Github className="h-4 w-4 md:h-5 md:w-5" />
                 </a>
                 <a
-                  href="https://linkedin.com"
+                  href="https://www.linkedin.com/in/muhammad-zeeshan-abbas-82076a36b/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="p-1.5 md:p-2 rounded-lg bg-muted hover:bg-muted/80 text-foreground/70 hover:text-foreground transition-all"
@@ -130,7 +130,7 @@ const Hero = () => {
                 <div className="absolute inset-0 bg-gradient-to-t from-background/20 to-transparent" />
               </div>
 
-              
+
             </div>
           </div>
         </div>

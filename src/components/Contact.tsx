@@ -62,7 +62,7 @@ const Contact = () => {
                   <div>
                     <h4 className="font-semibold mb-1">LinkedIn</h4>
                     <a
-                      href="https://www.linkedin.com/in/zeeshan-abbas-82076a36b/"
+                      href="https://www.linkedin.com/in/muhammad-zeeshan-abbas-82076a36b/"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-muted-foreground hover:text-primary transition-colors"
